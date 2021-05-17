@@ -1,0 +1,15 @@
+<!-- home.html -->
+
+{% extends 'website/base.html' %}
+
+{% load static %}
+
+{% block main %}
+    <h3>Titulo</h3>
+    <p>texto texto texto texto texto texto texto </p>
+    <p>{{ data }}</p>
+{% endblock %}
+
+{% block image %}
+    <img src="{% static 'website/images/omar.png' %}">
+{% endblock %}
