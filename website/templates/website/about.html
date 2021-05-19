@@ -3,6 +3,35 @@
 {% extends 'website/base.html' %}
 
 {% block main %}
-    <h3>about</h3>
+    <h3>Como a salsicha é feita</h3>
     <p>about about about about about about </p>
+{% endblock %}
+{% block code %}
+def outro_page_view(request, number):
+    lista = [randint(0, 100), randint(100, 1000)]
+
+    r = np.random.choice(lista, p=[0.8, 0.2])
+    number = r if int(number) == 0 else int(number)
+
+    fibonacci = nextFib(number)
+
+    context = {
+        'number': number,
+        'fib': fibonacci
+    }
+
+    return render(request, 'website/outro.html/', context)
+
+###############################################################
+
+def nextFib(number=0):
+    ctr = 0
+    while number > (currFib := fib(ctr)):
+        ctr += 1
+    return currFib
+
+
+@lru_cache(maxsize=100)
+def fib(n):
+    return n if n <= 0 or n == 1 else fib(n - 1) + fib(n - 2)
 {% endblock %}

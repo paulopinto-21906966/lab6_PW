@@ -1,5 +1,9 @@
 /* base.css */
 
+p {
+    color: red
+}
+
 footer {
    position: fixed;
    bottom: 30px;

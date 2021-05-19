@@ -15,7 +15,7 @@
         <nav>
             <a class="btn btn-info" href="{% url 'website:home' %}">Home</a>
             <a class="btn btn-info" href="{% url 'website:about' %}">Sobre</a>
-            <a class="btn btn-info" href="{% url 'website:outro' ' ' %}">other</a>
+            <a class="btn btn-info" href="{% url 'website:outro' '0' %}">other</a>
         </nav>
     </header>
 
@@ -32,6 +32,12 @@
 
         {% block aditional %}
         {% endblock %}
+        <pre>
+            <code>
+                {% block code %}
+                {% endblock %}
+            </code>
+        </pre>
     </article>
 
     <footer></footer>
