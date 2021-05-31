@@ -6,10 +6,8 @@ name = "pypi"
 [packages]
 django = "*"
 gunicorn = "*"
-numpy = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.9"
-numpy = "1.20.3"

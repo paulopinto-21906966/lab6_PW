@@ -1,0 +1,11 @@
+<!-- tarefas.html -->
+
+{% extends 'website/base.html' %}
+
+{% block main %}
+    {% for tarefa in tarefas %}
+        <p>
+           {{ tarefa.titulo }}
+        </p>
+   {% endfor %}
+{% endblock %}
