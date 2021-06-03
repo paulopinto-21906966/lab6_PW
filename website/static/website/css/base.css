@@ -1,17 +1,36 @@
-/* base.css */
+/* static/pages/css/base.css */
 
-p {
-    color: red
+header p {
+   font-style: italic;
+   color: gray;
 }
 
-footer {
-   position: fixed;
-   bottom: 30px;
-   width: 100%;
-   text-align: center;
+
+body {
+   background-color: royalblue;
 }
 
-body > article {
-    max-width: 800px;
-    margin: auto;
+
+.info {
+   font-size: 0.7em;
+   color: lightgray;
+}
+
+
+main {
+   width: 800px;
+   margin: auto;
+   padding: 10px;
+   background-color: white;
+   border-radius: 6px;
+}
+
+
+main p {
+   text-align: left;
+   padding: 20px;
+   margin: 10px;
+   color: white;
+   background-color: mediumpurple;
+   border-radius: 3px;
 }

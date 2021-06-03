@@ -10,8 +10,8 @@
 </head>
 <body>
     <header class="jumbotron text-center">
-        <h1>Não tenho a versão pro</h1>
-        <p>Já devia ter tratado disso</p>
+        <h1>Já tenho a versão pro</h1>
+        <p>Já tratei disso</p>
         <nav>
             <a class="btn btn-info" href="{% url 'website:home' %}">Home</a>
             <a class="btn btn-info" href="{% url 'website:about' %}">Sobre</a>
@@ -22,12 +22,12 @@
     </header>
 
     <article class="container">
-        <main class="col-sm-6">
+        <main class="container text-center">
             {% block main %}
             {% endblock %}
         </main>
 
-        <aside class="col-sm-6">
+        <aside class="container text-center">
             {% block image %}
             {% endblock %}
         </aside>
